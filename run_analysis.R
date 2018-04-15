@@ -110,6 +110,6 @@
   
     uci_har_activity_split_means<-sapply(uci_har_activity_split,colMeans)
 	
-	# Write dataset uci_har_activity_df to file uci_har_activity.txt
+	# Write dataset uci_har_activity_split_means to file uci_har_activity_subject_split_means.txt
 	
-	write.table(uci_har_activity_df,"uci_har_activity.txt",sep=" ",row.name=FALSE)
+	write.table(as.data.frame(t(uci_har_activity_split_means)),"./uci_har_activity_subject_split_means.txt",sep=" ",row.name=FALSE)

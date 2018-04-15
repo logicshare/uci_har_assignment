@@ -1,12 +1,5 @@
-###													DATA DICTIONARY - UCI_HAR_ACTIVITY
+###													DATA DICTIONARY - UCI HAR activity subject split means
 
-
-
-activityid 1 Activity Identifier 1..6
-
-subjectid 2 Subject Identifier 1..30
-
-activityname 18 Activity Name WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
 
 # ===============================================================================================================================================================		
 
@@ -96,7 +89,10 @@ tBodyGyroMean
 tBodyGyroJerkMean
 			
 				
-All the below variables are derived from the above vectors and combination of the above signals with above functions. It has a size of 9 and the values range between -1 and 1
+All the below mean variables are derived from the above vectors and combination of the above signals with above functions
+by splitting 561 vairables resulting from that with activityid and subjectid
+
+It has a size of 19 and the values range between -1 and 1
 
 # ===============================================================================================================================================================		
 
@@ -1221,6 +1217,7 @@ angle.x.gravitymean
 angle.y.gravitymean
 
 angle.z.gravitymean
+
 
 
 
