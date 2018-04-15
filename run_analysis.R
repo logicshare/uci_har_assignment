@@ -109,3 +109,7 @@
     # Find column means for elements in the list uci_har_activity_split
   
     uci_har_activity_split_means<-sapply(uci_har_activity_split,colMeans)
+	
+	# Write dataset uci_har_activity_df to file uci_har_activity.txt
+	
+	write.table(uci_har_activity_df,"uci_har_activity.txt",sep=" ",row.name=FALSE)
